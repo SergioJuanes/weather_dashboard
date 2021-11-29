@@ -2,9 +2,13 @@
 
 ## Project description
 
+https://weather-juanes.herokuapp.com/
+
 ## Requirements
 
-You need python3 installed in your machine.
+You need python3 installed in your machine. 
+
+You need a API key from https://www.weatherapi.com/.
 
 ## Installation
 
@@ -30,7 +34,13 @@ Install the required packages with:
 $ pip install -r requirements.txt
 ```
 
-To run the application:
+Create a `.env` file with the following variables:
+
+```
+WEATHER_API_KEY={YOUR_WEATHER_API_KEY}
+```
+
+To run the application just execute the following command:
 
 ```
 $ python app.py
