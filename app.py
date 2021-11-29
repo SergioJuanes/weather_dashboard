@@ -28,6 +28,8 @@ import datetime
 load_dotenv()
 WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")
 
+
+
 forecast_dict = {
     'Partly cloudy': 'fas fa-cloud-sun',
     'Sunny': 'fas fa-sun',
@@ -130,6 +132,7 @@ def make_table(i, json_input):
 
 app = dash.Dash(__name__, external_stylesheets=['style.css', FA, TW])
 
+server = app.server
 
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
